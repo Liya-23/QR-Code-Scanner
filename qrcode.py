@@ -1,0 +1,18 @@
+import qrcode
+
+img = qrcode.make("liya!")
+img.save("hero.png")
+img1 = qrcode.make("liyab1303@gmail.com")
+img1.save("Heroe.png")
+img2 =  qrcode.make("hello@codetelligence.co.za")
+img2.save("EmailCTNPC.png")
+# img3 =  qrcode.make("0658184978")
+# img3.save("WhatsappCTNPC.png")
+#number = input("whatsaapNumber? ")
+#saveas = input("Save Code As? ")
+#img4 = qrcode.make(number)
+#img4.save(saveas)
+textcode = input("Enter text ")
+imgcaption = input("Save Code As? ")
+img5 = qrcode.make(textcode)
+img5.save(imgcaption + ".png")
